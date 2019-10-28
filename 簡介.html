@@ -75,7 +75,7 @@
 				letter-spacing: 10px;
 				line-height:80px;
 				padding:10px 10px 5px 10px;
-				background:#E2E892;
+				background:#BBE896;
 				transition: all 0.5s;
 		        overflow: hidden;
 			}
@@ -354,6 +354,40 @@
 		.ta9:hover:before, .ta9:hover:after{
 		transform: translate(0,0);}
 
+
+			.ta10{
+				position: absolute;
+				top:1260px;
+				left:650px;
+				text-align: left;
+				font-size: 30px;
+				font-family:"微軟正黑體";
+				letter-spacing: 10px;
+				line-height:80px;
+				padding:10px 10px 5px 10px;
+				background:#E2E892;
+				transition: all 0.5s;
+		        overflow: hidden;
+			}
+		.ta10:before, .ta10:after{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+		background-color: rgba(255,255,255,0.25);
+		transition: all 0.3s;
+		transform: translate(0,-100%);
+		transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);}
+		.ta10:after{
+		transition-delay: 0.2s;
+		}
+		.ta10:hover:before, .ta10:hover:after{
+		transform: translate(0,0);}
+
+
 		</style>
 	</head>
 	<body>
@@ -438,10 +472,10 @@
 				</th>
 			</tr>
 		</table>
-		<table class="ta7">
+		<table class="ta10">
 			<tr>
 				<th>
-					<img src ="assets/img/56.jpg">
+					<img src ="assets/img/56.JPG">
 				</th>
 				<th>
 					背號:56 <br>
