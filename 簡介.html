@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>簡介</title>
+		<style>
+			header{
+				width: 100%;
+				height:152px;
+				background-color:orange;
+				margin-top: 4cm;
+				position:absolute;
+				top:-160px;
+				left:-1px;
+				z-index: -1;
+				font-family: "微軟正黑體";
+				color:orange;
+			}
+			.head{
+				text-align: center;
+				font-size:48px;
+					font-family: "微軟正黑體";
+			}
+			a{
+				text-decoration:none;
+			}
+			a:hover {
+			//設定滑鼠移經的連結
+			text-decoration:underline;
+			background-color:white;
+			color:gray;
+			}
+			.basketball{margin-top: 4cm;
+				position:absolute;
+				top:-6%;right:50%;bottom:20px;left:-2%;
+				z-index: -2;
+				opacity:0.5;
+			}
+			.t1{position: absolute;
+				top:15px;
+				right:360px;
+				font-family: "微軟正黑體";
+				font-size:24px;
+				
+			}
+			.t2{position: absolute;
+				top:15px;
+				right:260px;
+			font-family: "微軟正黑體";
+			font-size:24px;
+			
+			}
+			.t3{position: absolute;
+				top:15px;
+				right:160px;
+				font-family: "微軟正黑體";
+				font-size:24px;
+			
+			}
+			.t4{position: absolute;
+				top:15px;
+				right:60px;
+				font-family: "微軟正黑體";
+				font-size:24px;
+				
+			}
+			
+			.ta1{
+				position: absolute;
+				top:180px;
+				left:50px;
+				text-align: left;
+				font-size: 30px;
+				font-family:"微軟正黑體";
+				letter-spacing: 10px;
+				line-height:80px;
+				padding:10px 10px 5px 10px;
+				background:#E2E892;
+				transition: all 0.5s;
+		        overflow: hidden;
+			}
+		.ta1:before, .ta1:after{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+		background-color: rgba(255,255,255,0.25);
+		transition: all 0.3s;
+		transform: translate(0,-100%);
+		transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);}
+		.ta1:after{
+		transition-delay: 0.2s;
+		}
+		.ta1:hover:before, .ta1:hover:after{
+		transform: translate(0,0);}
+
+
+			.ta2{
+				position: absolute;
+				top:180px;
+				left:650px;
+				text-align: left;
+				font-size: 30px;
+				font-family:"微軟正黑體";
+				letter-spacing: 10px;
+				line-height:80px;
+				padding:10px 10px 5px 10px;
+				background:#E2E892;
+				transition: all 0.5s;
+		        overflow: hidden;
+			}
+		.ta2:before, .ta2:after{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+		background-color: rgba(255,255,255,0.25);
+		transition: all 0.3s;
+		transform: translate(0,-100%);
+		transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);}
+		.ta2:after{
+		transition-delay: 0.2s;
+		}
+		.ta2:hover:before, .ta2:hover:after{
+		transform: translate(0,0);}
+
+			.ta3{
+				position: absolute;
+				top:450px;
+				left:50px;
+				text-align: left;
+				font-size: 30px;
+				font-family:"微軟正黑體";
+				letter-spacing: 10px;
+				line-height:80px;
+				padding:10px 10px 5px 10px;
+				background:#E2E892;
+				transition: all 0.5s;
+		        overflow: hidden;
+			}
+		.ta3:before, .ta3:after{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+		background-color: rgba(255,255,255,0.25);
+		transition: all 0.3s;
+		transform: translate(0,-100%);
+		transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);}
+		.ta3:after{
+		transition-delay: 0.2s;
+		}
+		.ta3:hover:before, .ta3:hover:after{
+		transform: translate(0,0);}
+
+			.ta4{
+				position: absolute;
+				top:450px;
+				left:650px;
+				text-align: left;
+				font-size: 30px;
+				font-family:"微軟正黑體";
+				letter-spacing: 10px;
+				line-height:80px;
+				padding:10px 10px 5px 10px;
+				background:#BBE896;
+				transition: all 0.5s;
+		        overflow: hidden;
+			}
+		.ta4:before, .ta4:after{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+		background-color: rgba(255,255,255,0.25);
+		transition: all 0.3s;
+		transform: translate(0,-100%);
+		transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);}
+		.ta4:after{
+		transition-delay: 0.2s;
+		}
+		.ta4:hover:before, .ta4:hover:after{
+		transform: translate(0,0);}
+
+			.ta5{
+				position: absolute;
+				top:720px;
+				left:50px;
+				text-align: left;
+				font-size: 30px;
+				font-family:"微軟正黑體";
+				letter-spacing: 10px;
+				line-height:80px;
+				padding:10px 10px 5px 10px;
+				background:#BBE896;
+				transition: all 0.5s;
+		        overflow: hidden;
+			}
+		.ta5:before, .ta5:after{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+		background-color: rgba(255,255,255,0.25);
+		transition: all 0.3s;
+		transform: translate(0,-100%);
+		transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);}
+		.ta5:after{
+		transition-delay: 0.2s;
+		}
+		.ta5:hover:before, .ta5:hover:after{
+		transform: translate(0,0);}
+
+			.ta6{
+				position: absolute;
+				top:720px;
+				left:650px;
+				text-align: left;
+				font-size: 30px;
+				font-family:"微軟正黑體";
+				letter-spacing: 10px;
+				line-height:80px;
+				padding:10px 10px 5px 10px;
+				background:#E2E892;
+				transition: all 0.5s;
+		        overflow: hidden;
+			}
+		.ta6:before, .ta6:after{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+		background-color: rgba(255,255,255,0.25);
+		transition: all 0.3s;
+		transform: translate(0,-100%);
+		transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);}
+		.ta6:after{
+		transition-delay: 0.2s;
+		}
+		.ta6:hover:before, .ta6:hover:after{
+		transform: translate(0,0);}
+
+			.ta7{
+				position: absolute;
+				top:990px;
+				left:50px;
+				text-align: left;
+				font-size: 30px;
+				font-family:"微軟正黑體";
+				letter-spacing: 10px;
+				line-height:80px;
+				padding:10px 10px 5px 10px;
+				background:#E2E892;
+				transition: all 0.5s;
+		        overflow: hidden;
+			}
+		.ta7:before, .ta7:after{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+		background-color: rgba(255,255,255,0.25);
+		transition: all 0.3s;
+		transform: translate(0,-100%);
+		transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);}
+		.ta7:after{
+		transition-delay: 0.2s;
+		}
+		.ta7:hover:before, .ta7:hover:after{
+		transform: translate(0,0);}
+
+			.ta8{
+				position: absolute;
+				top:990px;
+				left:650px;
+				text-align: left;
+				font-size: 30px;
+				font-family:"微軟正黑體";
+				letter-spacing: 10px;
+				line-height:80px;
+				padding:10px 10px 5px 10px;
+				background:#BBE896;
+				transition: all 0.5s;
+		        overflow: hidden;
+			}
+		.ta8:before, .ta8:after{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+		background-color: rgba(255,255,255,0.25);
+		transition: all 0.3s;
+		transform: translate(0,-100%);
+		transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);}
+		.ta8:after{
+		transition-delay: 0.2s;
+		}
+		.ta8:hover:before, .ta8:hover:after{
+		transform: translate(0,0);}
+
+			.ta9{
+				position: absolute;
+				top:1260px;
+				left:50px;
+				text-align: left;
+				font-size: 30px;
+				font-family:"微軟正黑體";
+				letter-spacing: 10px;
+				line-height:80px;
+				padding:10px 10px 5px 10px;
+				background:#BBE896;
+				transition: all 0.5s;
+		        overflow: hidden;
+			}
+		.ta9:before, .ta9:after{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+		background-color: rgba(255,255,255,0.25);
+		transition: all 0.3s;
+		transform: translate(0,-100%);
+		transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);}
+		.ta9:after{
+		transition-delay: 0.2s;
+		}
+		.ta9:hover:before, .ta9:hover:after{
+		transform: translate(0,0);}
+
+		</style>
+	</head>
+	<body>
+		<header>
+		</header>
+		<a href="簡介.html" border="0" class="t1">球員介紹</a>
+		<div class="t2"><a href="vv.html" >比賽活動</div></a>
+		<a href="https://i-learning.cycu.edu.tw/" > <div class="t3">影片介紹</a></div>
+		<a href="nn.html" class="t4"> 關於我們</a>
+		<img src="22D.png"/>
+		<a href="ee.html" class="head" color:white;>中原大學資管系女子籃球隊</a>
+		
+		<table class="ta1">
+			<tr>
+				<th>
+					<img src ="24.JPG">
+				</th>
+				<th>
+					背號:24 <br>
+					名字:沈家妤<br>
+					位置:中鋒<br>
+				</th>
+			</tr>
+		</table>
+		<table class="ta2">
+			<tr>
+				<th>
+					<img src ="20.JPG">
+				</th>
+				<th>
+					背號:20 <br>
+					名字:林思妤<br>
+					位置:前鋒<br>
+				</th>
+			</tr>
+		</table>
+		<table class="ta3">
+			<tr>
+				<th>
+					<img src ="18.JPG">
+				</th>
+				<th>
+					背號:18 <br>
+					名字:呂淑茹<br>
+					位置:控球<br>
+				</th>
+			</tr>
+		</table>
+		<table class="ta9">
+			<tr>
+				<th>
+					<img src ="3.JPG">
+				</th>
+				<th>
+					背號:3 <br>
+					名字:陳品如<br>
+					位置:前鋒<br>
+				</th>
+			</tr>
+		</table>
+		<table class="ta5">
+			<tr>
+				<th>
+					<img src ="55.JPG">
+				</th>
+				<th>
+					背號:55 <br>
+					名字:蘇紋誼<br>
+					位置:射手<br>
+				</th>
+			</tr>
+		</table>
+		<table class="ta6">
+			<tr>
+				<th>
+					<img src ="77.JPG">
+				</th>
+				<th>
+					背號:77 <br>
+					名字:王妙文<br>
+					位置:前鋒<br>
+				</th>
+			</tr>
+		</table>
+		<table class="ta7">
+			<tr>
+				<th>
+					<img src ="56.JPG">
+				</th>
+				<th>
+					背號:56 <br>
+					名字:彭齡萱<br>
+					位置:中鋒<br>
+				</th>
+			</tr>
+		</table>
+		<table class="ta8">
+			<tr>
+				<th>
+					<img src ="31.JPG">
+				</th>
+				<th>
+					背號:31 <br>
+					名字:朱映潔<br>
+					位置:中鋒<br>
+				</th>
+			</tr>
+		</table>
+		<table class="ta4">
+			<tr>
+				<th>
+					<img src ="87.JPG">
+				</th>
+				<th>
+					背號:87 <br>
+					名字:吳雨臻<br>
+					位置:控球<br>
+				</th>
+			</tr>
+		</table>
+	</body>
+</html>

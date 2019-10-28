@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>表單</title>
+	<style>
+		header{
+			width: 100%;
+			height:152px;
+			background-color:orange;
+			margin-top: 4cm;
+			position:absolute;
+			top:-160px;
+			left:-1px;
+			z-index: -1;
+			font-family: "微軟正黑體";
+			color:orange;
+		}
+		.head{
+			text-align: center;
+			font-size:48px;
+			font-family: "微軟正黑體";	
+		}
+		a{
+			text-decoration:none;
+		}
+		a:hover {
+		//設定滑鼠移經的連結
+		text-decoration:underline;
+		background-color:white;
+		color:gray;
+		}
+		.basketball{margin-top: 4cm;
+			position:absolute;
+			top:-6%;right:50%;bottom:20px;left:-2%;
+			z-index: -2;
+			opacity:0.5;
+		}
+		.t1{position: absolute;
+			top:15px;
+			right:360px;
+			font-family: "微軟正黑體";
+			font-size:24px;
+			
+		}
+		.t2{position: absolute;
+			top:15px;
+			right:260px;
+		font-family: "微軟正黑體";
+		font-size:24px;
+		
+		}
+		.t3{position: absolute;
+			top:15px;
+			right:160px;
+			font-family: "微軟正黑體";
+			font-size:24px;
+		
+		}
+		.t4{position: absolute;
+			top:15px;
+			right:60px;
+			font-family: "微軟正黑體";
+			font-size:24px;
+		}
+		p{
+			position: absolute;
+			top:150px;
+			left:480px;
+			font-family: "微軟正黑體";
+			font-size: 60px;
+            letter-spacing: 10px;
+		}
+		.ta{
+			position: absolute;
+			top:350px;
+			left:400px;
+			font-family: "微軟正黑體";
+			font-size: 30px;
+            letter-spacing: 10px;
+            text-align: left;
+		}
+		.b{
+			font-family: "微軟正黑體";
+			background-color: #FFB97C;
+			padding: 5px 10px;
+			font-weight: bold;
+
+		}
+	</style>
+</head>
+<body>
+	<header>
+		
+	</header><!-- /header -->
+	<a href="https://www.google.com.tw/" border="0" class="t1">球隊介紹</a>
+		<div class="t2"><a href="https://www.youtube.com/" >比賽活動</div></a>
+		<a href="https://i-learning.cycu.edu.tw/" > <div class="t3">影片介紹</a></div>
+		<a href="https://dictionary.cambridge.org/zht/" class="t4"> 關於我們</a>
+		<img src="22D.png"/>
+		<img class="basketball"src="bas1.jpg"/>
+		<a href="https://www.facebook.com/groups/134529689947302/" class="head" color:white;>中原大學資管系女子籃球隊</a>
+
+	<p>加入我們</p>
+
+	<table class="ta">
+		<tr>
+			<th>
+			姓名：<input type="text" name="name"/>
+			</th>
+		</tr>
+		<tr>
+			<th>
+			系級:<select size="1" name="grade">
+				<option>資管一甲</option>
+				<option>資管一乙</option>
+				<option>資管二甲</option>
+				<option>資管二乙</option>
+				<option>資管三甲</option>
+				<option>資管三乙</option>
+				<option>資管四甲</option>
+				<option>資管四乙</option>
+				<option>資管碩一</option>
+				<option>資管碩二</option>
+			    </select>
+			</th>
+		</tr>
+		<tr>
+			<th>
+				電話:<input type="text" name="ph"/>
+			</th>
+		</tr>
+		<tr>
+			<th>
+				Email:<input type="text" name="email"/>
+			</th>
+		</tr>
+		<tr>
+			<th>
+				對女籃的期許:<br>
+				<textarea name="reply" cols="50" rows="10" wrap="hard"> </textarea>
+			</th>
+		</tr>
+		<tr>
+			<th align="center">
+				<input type="submit" value="送出"  class="b" /> 
+			</th>
+		</tr>
+	</table>
+
+</body>
+</html>
