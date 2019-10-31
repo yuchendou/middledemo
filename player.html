@@ -4,389 +4,7 @@
 		<meta charset="UTF-8">
 		<title>簡介</title>
 		<style>
-			header{
-				width: 100%;
-				height:152px;
-				background-color:orange;
-				margin-top: 4cm;
-				position:absolute;
-				top:-160px;
-				left:-1px;
-				z-index: -1;
-				font-family: "微軟正黑體";
-				color:orange;
-			}
-			.head{
-				text-align: center;
-				font-size:48px;
-					font-family: "微軟正黑體";
-			}
-			a{
-				text-decoration:none;
-			}
-			a:hover {
-			//設定滑鼠移經的連結
-			text-decoration:underline;
-			background-color:white;
-			color:gray;
-			}
-			.basketball{margin-top: 4cm;
-				position:absolute;
-				top:-6%;right:50%;bottom:20px;left:-2%;
-				z-index: -2;
-				opacity:0.5;
-			}
-			.t1{position: absolute;
-				top:15px;
-				right:360px;
-				font-family: "微軟正黑體";
-				font-size:24px;
-				
-			}
-			.t2{position: absolute;
-				top:15px;
-				right:260px;
-			font-family: "微軟正黑體";
-			font-size:24px;
-			
-			}
-			.t3{position: absolute;
-				top:15px;
-				right:160px;
-				font-family: "微軟正黑體";
-				font-size:24px;
-			
-			}
-			.t4{position: absolute;
-				top:15px;
-				right:60px;
-				font-family: "微軟正黑體";
-				font-size:24px;
-				
-			}
-			
-			.ta1{
-				position: absolute;
-				top:180px;
-				left:50px;
-				text-align: left;
-				font-size: 30px;
-				font-family:"微軟正黑體";
-				letter-spacing: 10px;
-				line-height:80px;
-				padding:10px 10px 5px 10px;
-				background:#BBE896;
-				transition: all 0.5s;
-		        overflow: hidden;
-			}
-		.ta1:before, .ta1:after{
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		z-index: 1;
-		background-color: rgba(255,255,255,0.25);
-		transition: all 0.3s;
-		transform: translate(0,-100%);
-		transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);}
-		.ta1:after{
-		transition-delay: 0.2s;
-		}
-		.ta1:hover:before, .ta1:hover:after{
-		transform: translate(0,0);}
-
-
-			.ta2{
-				position: absolute;
-				top:180px;
-				left:650px;
-				text-align: left;
-				font-size: 30px;
-				font-family:"微軟正黑體";
-				letter-spacing: 10px;
-				line-height:80px;
-				padding:10px 10px 5px 10px;
-				background:#E2E892;
-				transition: all 0.5s;
-		        overflow: hidden;
-			}
-		.ta2:before, .ta2:after{
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		z-index: 1;
-		background-color: rgba(255,255,255,0.25);
-		transition: all 0.3s;
-		transform: translate(0,-100%);
-		transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);}
-		.ta2:after{
-		transition-delay: 0.2s;
-		}
-		.ta2:hover:before, .ta2:hover:after{
-		transform: translate(0,0);}
-
-			.ta3{
-				position: absolute;
-				top:450px;
-				left:50px;
-				text-align: left;
-				font-size: 30px;
-				font-family:"微軟正黑體";
-				letter-spacing: 10px;
-				line-height:80px;
-				padding:10px 10px 5px 10px;
-				background:#E2E892;
-				transition: all 0.5s;
-		        overflow: hidden;
-			}
-		.ta3:before, .ta3:after{
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		z-index: 1;
-		background-color: rgba(255,255,255,0.25);
-		transition: all 0.3s;
-		transform: translate(0,-100%);
-		transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);}
-		.ta3:after{
-		transition-delay: 0.2s;
-		}
-		.ta3:hover:before, .ta3:hover:after{
-		transform: translate(0,0);}
-
-			.ta4{
-				position: absolute;
-				top:450px;
-				left:650px;
-				text-align: left;
-				font-size: 30px;
-				font-family:"微軟正黑體";
-				letter-spacing: 10px;
-				line-height:80px;
-				padding:10px 10px 5px 10px;
-				background:#BBE896;
-				transition: all 0.5s;
-		        overflow: hidden;
-			}
-		.ta4:before, .ta4:after{
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		z-index: 1;
-		background-color: rgba(255,255,255,0.25);
-		transition: all 0.3s;
-		transform: translate(0,-100%);
-		transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);}
-		.ta4:after{
-		transition-delay: 0.2s;
-		}
-		.ta4:hover:before, .ta4:hover:after{
-		transform: translate(0,0);}
-
-			.ta5{
-				position: absolute;
-				top:720px;
-				left:50px;
-				text-align: left;
-				font-size: 30px;
-				font-family:"微軟正黑體";
-				letter-spacing: 10px;
-				line-height:80px;
-				padding:10px 10px 5px 10px;
-				background:#BBE896;
-				transition: all 0.5s;
-		        overflow: hidden;
-			}
-		.ta5:before, .ta5:after{
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		z-index: 1;
-		background-color: rgba(255,255,255,0.25);
-		transition: all 0.3s;
-		transform: translate(0,-100%);
-		transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);}
-		.ta5:after{
-		transition-delay: 0.2s;
-		}
-		.ta5:hover:before, .ta5:hover:after{
-		transform: translate(0,0);}
-
-			.ta6{
-				position: absolute;
-				top:720px;
-				left:650px;
-				text-align: left;
-				font-size: 30px;
-				font-family:"微軟正黑體";
-				letter-spacing: 10px;
-				line-height:80px;
-				padding:10px 10px 5px 10px;
-				background:#E2E892;
-				transition: all 0.5s;
-		        overflow: hidden;
-			}
-		.ta6:before, .ta6:after{
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		z-index: 1;
-		background-color: rgba(255,255,255,0.25);
-		transition: all 0.3s;
-		transform: translate(0,-100%);
-		transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);}
-		.ta6:after{
-		transition-delay: 0.2s;
-		}
-		.ta6:hover:before, .ta6:hover:after{
-		transform: translate(0,0);}
-
-			.ta7{
-				position: absolute;
-				top:990px;
-				left:50px;
-				text-align: left;
-				font-size: 30px;
-				font-family:"微軟正黑體";
-				letter-spacing: 10px;
-				line-height:80px;
-				padding:10px 10px 5px 10px;
-				background:#E2E892;
-				transition: all 0.5s;
-		        overflow: hidden;
-			}
-		.ta7:before, .ta7:after{
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		z-index: 1;
-		background-color: rgba(255,255,255,0.25);
-		transition: all 0.3s;
-		transform: translate(0,-100%);
-		transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);}
-		.ta7:after{
-		transition-delay: 0.2s;
-		}
-		.ta7:hover:before, .ta7:hover:after{
-		transform: translate(0,0);}
-
-			.ta8{
-				position: absolute;
-				top:990px;
-				left:650px;
-				text-align: left;
-				font-size: 30px;
-				font-family:"微軟正黑體";
-				letter-spacing: 10px;
-				line-height:80px;
-				padding:10px 10px 5px 10px;
-				background:#BBE896;
-				transition: all 0.5s;
-		        overflow: hidden;
-			}
-		.ta8:before, .ta8:after{
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		z-index: 1;
-		background-color: rgba(255,255,255,0.25);
-		transition: all 0.3s;
-		transform: translate(0,-100%);
-		transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);}
-		.ta8:after{
-		transition-delay: 0.2s;
-		}
-		.ta8:hover:before, .ta8:hover:after{
-		transform: translate(0,0);}
-
-			.ta9{
-				position: absolute;
-				top:1260px;
-				left:50px;
-				text-align: left;
-				font-size: 30px;
-				font-family:"微軟正黑體";
-				letter-spacing: 10px;
-				line-height:80px;
-				padding:10px 10px 5px 10px;
-				background:#BBE896;
-				transition: all 0.5s;
-		        overflow: hidden;
-			}
-		.ta9:before, .ta9:after{
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		z-index: 1;
-		background-color: rgba(255,255,255,0.25);
-		transition: all 0.3s;
-		transform: translate(0,-100%);
-		transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);}
-		.ta9:after{
-		transition-delay: 0.2s;
-		}
-		.ta9:hover:before, .ta9:hover:after{
-		transform: translate(0,0);}
-
-
-			.ta10{
-				position: absolute;
-				top:1260px;
-				left:650px;
-				text-align: left;
-				font-size: 30px;
-				font-family:"微軟正黑體";
-				letter-spacing: 10px;
-				line-height:80px;
-				padding:10px 10px 5px 10px;
-				background:#E2E892;
-				transition: all 0.5s;
-		        overflow: hidden;
-			}
-		.ta10:before, .ta10:after{
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		z-index: 1;
-		background-color: rgba(255,255,255,0.25);
-		transition: all 0.3s;
-		transform: translate(0,-100%);
-		transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);}
-		.ta10:after{
-		transition-delay: 0.2s;
-		}
-		.ta10:hover:before, .ta10:hover:after{
-		transform: translate(0,0);}
-
+			@import url("assets/css/playercss.css");
 
 		</style>
 	</head>
@@ -399,7 +17,8 @@
 		<a href="aboutus.html" class="t4"> 關於我們</a>
 		<img src="img/22D.png"/>
 		<a href="index.html" class="head" color:white;>中原大學資管系女子籃球隊</a>
-		
+
+	<div>
 		<table class="ta1">
 			<tr>
 				<th>
@@ -412,6 +31,9 @@
 				</th>
 			</tr>
 		</table>
+	</div>
+
+	<div>
 		<table class="ta2">
 			<tr>
 				<th>
@@ -424,6 +46,9 @@
 				</th>
 			</tr>
 		</table>
+	</div>
+
+	<div>
 		<table class="ta3">
 			<tr>
 				<th>
@@ -436,6 +61,9 @@
 				</th>
 			</tr>
 		</table>
+	</div>
+
+	<div>
 		<table class="ta9">
 			<tr>
 				<th>
@@ -448,6 +76,9 @@
 				</th>
 			</tr>
 		</table>
+	</div>
+
+	<div>
 		<table class="ta5">
 			<tr>
 				<th>
@@ -460,6 +91,9 @@
 				</th>
 			</tr>
 		</table>
+	</div>
+
+	<div>
 		<table class="ta6">
 			<tr>
 				<th>
@@ -472,6 +106,9 @@
 				</th>
 			</tr>
 		</table>
+	</div>
+
+	<div>
 		<table class="ta10">
 			<tr>
 				<th>
@@ -484,6 +121,9 @@
 				</th>
 			</tr>
 		</table>
+	</div>
+
+	<div>
 		<table class="ta8">
 			<tr>
 				<th>
@@ -496,6 +136,9 @@
 				</th>
 			</tr>
 		</table>
+	</div>
+
+	<div>
 		<table class="ta4">
 			<tr>
 				<th>
@@ -508,6 +151,9 @@
 				</th>
 			</tr>
 		</table>
+	</div>
+
+	<div>
 		<table class="ta7">
 			<tr>
 				<th>
@@ -520,5 +166,7 @@
 				</th>
 			</tr>
 		</table>
+	</div>
+	
 	</body>
 </html>

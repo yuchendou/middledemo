@@ -1,0 +1,83 @@
+		header{
+			width: 100%;
+			height:152px;
+			background-color:orange;
+			margin-top: 4cm;
+			position:absolute;
+			top:-160px;
+			left:-1px;
+			z-index: -1;
+			font-family: "微軟正黑體";
+			color:orange;
+		}
+		.head{
+			text-align: center;
+			font-size:48px;
+			font-family: "微軟正黑體";	
+		}
+		a{
+			text-decoration:none;
+		}
+		a:hover {
+		//設定滑鼠移經的連結
+		text-decoration:underline;
+		background-color:white;
+		color:gray;
+		}
+		.basketball{margin-top: 4cm;
+			position:absolute;
+			top:-6%;right:50%;bottom:20px;left:-2%;
+			z-index: -2;
+			opacity:0.5;
+		}
+		.t1{position: absolute;
+			top:15px;
+			right:360px;
+			font-family: "微軟正黑體";
+			font-size:24px;
+			
+		}
+		.t2{position: absolute;
+			top:15px;
+			right:260px;
+		font-family: "微軟正黑體";
+		font-size:24px;
+		
+		}
+		.t3{position: absolute;
+			top:15px;
+			right:160px;
+			font-family: "微軟正黑體";
+			font-size:24px;
+		
+		}
+		.t4{position: absolute;
+			top:15px;
+			right:60px;
+			font-family: "微軟正黑體";
+			font-size:24px;
+		}
+		p{
+			position: absolute;
+			top:150px;
+			left:480px;
+			font-family: "微軟正黑體";
+			font-size: 60px;
+            letter-spacing: 10px;
+		}
+		.ta{
+			position: absolute;
+			top:350px;
+			left:400px;
+			font-family: "微軟正黑體";
+			font-size: 30px;
+            letter-spacing: 10px;
+            text-align: left;
+		}
+		.b{
+			font-family: "微軟正黑體";
+			background-color: #FFB97C;
+			padding: 5px 10px;
+			font-weight: bold;
+
+		}
